@@ -4,7 +4,7 @@
 Code for my temperature mapper and reducer can be found in the ``MaxTemperature.java`` file
 
 ## Screenshot of execution on GCP
-![Exec on GCP](./Docker/mrgcp.PNG)
+![Exec on GCP](./Docker/media/mrgcp.PNG)
 
 ## Output of execution
 Output of my mapreduce program can be found in the ``results.txt`` file
