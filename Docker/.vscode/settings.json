@@ -1,0 +1,11 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\Stefon\\Downloads\\google-cloud-storage-2.2.0.jar",
+        "c:\\Users\\Stefon\\Downloads\\google-auth-library-credentials-1.2.2.jar",
+        "c:\\Users\\Stefon\\Downloads\\commons-cli-1.2.jar",
+        "c:\\Users\\Stefon\\Downloads\\commons-logging-1.2.jar",
+        "c:\\Users\\Stefon\\Downloads\\hadoop-mapreduce-client-core-2.6.0-cdh5.15.1.jar",
+        "c:\\Users\\Stefon\\Downloads\\hadoop-common-2.6.0-cdh5.15.1.jar"
+    ]
+}
