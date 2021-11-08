@@ -15,9 +15,9 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 public class MaxTemperature
 {
-    public class MaxTemperatureMapper extends Mapper<LongWritable, Text, Text, IntWritable>
+    public static class MaxTemperatureMapper extends Mapper<LongWritable, Text, Text, IntWritable>
     {
-        private static final int MISSING = 999;
+        private static final int MISSING = 9999;
 
         @Override
         public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException
@@ -35,14 +35,14 @@ public class MaxTemperature
             }
             String quality = line.substring(92,93);
 
-            if(airTemperature != MISSING && quality.matches("[01459"))
+            if(airTemperature != MISSING && quality.matches("[01459]"))
             {
                 context.write(new Text(year), new IntWritable(airTemperature));
             }
         }
     }
 
-    public class MaxTemperatureReducer extends Reducer<Text, IntWritable, Text, IntWritable>
+    public static class MaxTemperatureReducer extends Reducer<Text, IntWritable, Text, IntWritable>
     {
         @Override
         public void reduce(Text key, Iterable<IntWritable> values, Context context) throws IOException, InterruptedException
